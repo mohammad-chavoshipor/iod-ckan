@@ -3,6 +3,7 @@
 <div class="lang-selector">
   <ul>
     {% for locale in h.get_available_locales() %}
+    {% if locale.short_name in "fa_IR" or in "en" %}
       <li class="lang-selector__{{ locale }}">
         <a href="{% url_for current_url, locale=locale.short_name %}" {% if locale.identifier == current_lang %}class="selected"{% endif %}>
         {% if locale.display_name in 'فارسی (ایران)' %}
@@ -12,6 +13,7 @@
         {% endif %}
         </a>
       </li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>
