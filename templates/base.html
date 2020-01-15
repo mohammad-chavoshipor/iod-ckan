@@ -2,7 +2,9 @@
 
 <title>
   {%- block title -%}
-    Making Iranian Data Available to the public
+    {%- block subtitle %}{% endblock -%}
+    {%- if self.subtitle()|trim %} {{ g.template_title_deliminater }} {% endif -%}
+    {{ g.site_title }}
   {%- endblock -%}
 </title>
 
