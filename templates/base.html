@@ -1,0 +1,49 @@
+{% ckan_extends %}
+
+<title>
+  {%- block title -%}
+    Making Iranian Data Available to the public
+  {%- endblock -%}
+</title>
+
+{% block styles %}
+  {{ super() }}
+
+  {# Import iod_theme.css using Fanstatic.
+     'example_theme/' is the name that the example_theme/fanstatic directory
+     was registered with when the toolkit.add_resource() function was called.
+     'style.css' is the path to the CSS file, relative to the root of
+     the fanstatic directory. #}
+
+  {% resource 'iod_theme/style.css' %}
+
+  {% resource 'iod_theme/script.js' %}
+  {% resource 'iod_theme/list.js' %}
+
+  <link rel="stylesheet" href="https://use.typekit.net/kww7zne.css">
+{% endblock %}
+
+{% block links %}
+  {{ super() }}
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicons/manifest.json">
+  <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#ea562e">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+  {% block googleanalytics_header %}
+    {{ h.googleanalytics_header() }}
+  {% endblock %}
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  {% block googleanalytics_event_tracking %}
+    {% resource 'ckanext-googleanalytics/googleanalytics_event_tracking.js' %}
+    <div class="js-hide" data-module="google-analytics"
+      data-module-googleanalytics_resource_prefix="{{ g.googleanalytics_resource_prefix }}">
+    </div>
+  {% endblock %}
+{% endblock %}

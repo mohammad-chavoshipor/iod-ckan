@@ -1,0 +1,2671 @@
+{
+  "scheming_version": 1,
+  "dataset_type": "dataset",
+  "about": "Iran Open Data CKAN dataset schema",
+  "about_url": "http://github.com/smallmedia/iod-ckan",
+  "form_languages": ["en", "fa_IR"],
+  "dataset_fields": [
+    {
+      "field_name": "title",
+      "label": "Title of Dataset",
+      "preset": "title",
+      "form_placeholder": "Name given to the dataset",
+      "required": true
+    },
+    {
+      "field_name": "name",
+      "label": "URL",
+      "preset": "dataset_slug",
+      "form_placeholder": "eg. my-dataset",
+      "required": true
+    },
+    {
+      "field_name": "title_translated",
+      "label": {
+        "en": "Title of Dataset",
+        "fa_IR": "نام فایل"
+      },
+      "preset": "fluent_core_translated",
+      "form_placeholder": {
+        "en": "Name given to the dataset for English",
+        "fa_IR": "Name given to the dataset for Farsi"
+      },
+      "required": true
+    },
+    {
+      "field_name": "notes_translated",
+      "label": {
+        "en": "Description",
+        "fa_IR": "توضیح"
+      },
+      "preset": "fluent_core_markdown_translated",
+      "form_placeholder": {
+        "en": "Short description explaining the content and its origins for English",
+        "fa_IR": "Short description explaining the content and its origins for Farsi"
+      },
+      "required": true
+    },
+    {
+      "field_name": "tags_string",
+      "label": {
+        "en": "Tags",
+        "fa_IR": "برچسب"
+      },
+      "preset": "multiple_checkbox",
+      "required": true,
+      "choices": [
+        {
+          "value": "accidents",
+          "label": {
+            "en": "accidents",
+            "fa_IR": "تصادفات"
+          }
+        },
+        {
+          "value": "activity status",
+          "label": {
+            "en": "activity status",
+            "fa_IR": "وضع فعالیت"
+          }
+        },
+        {
+          "value": "administrative boundaries",
+          "label": {
+            "en": "administrative boundaries",
+            "fa_IR": "تقسیمات کشوری"
+          }
+        },
+        {
+          "value": "advanced diploma",
+          "label": {
+            "en": "advanced diploma",
+            "fa_IR": "کاردانی"
+          }
+        },
+        {
+          "value": "age",
+          "label": {
+            "en": "age",
+            "fa_IR": "سن"
+          }
+        },
+        {
+          "value": "agriculture",
+          "label": {
+            "en": "agriculture",
+            "fa_IR": "کشاورزی"
+          }
+        },
+        {
+          "value": "air pollution",
+          "label": {
+            "en": "air pollution",
+            "fa_IR": "آلودگی هوا"
+          }
+        },
+        {
+          "value": "Ansar bank",
+          "label": {
+            "en": "Ansar bank",
+            "fa_IR": "بانک انصار"
+          }
+        },
+        {
+          "value": "art",
+          "label": {
+            "en": "art",
+            "fa_IR": "هنر"
+          }
+        },
+        {
+          "value": "Ayandeh bank",
+          "label": {
+            "en": "Ayandeh bank",
+            "fa_IR": "بانک آینده"
+          }
+        },
+        {
+          "value": "bacholor",
+          "label": {
+            "en": "bacholor",
+            "fa_IR": "کارشناسی"
+          }
+        },
+        {
+          "value": "balance of trade",
+          "label": {
+            "en": "balance of trade",
+            "fa_IR": "تراز تجاری"
+          }
+        },
+        {
+          "value": "balance sheet",
+          "label": {
+            "en": "balance sheet",
+            "fa_IR": "ترازنامه"
+          }
+        },
+        {
+          "value": "bank",
+          "label": {
+            "en": "bank",
+            "fa_IR": "بانک"
+          }
+        },
+        {
+          "value": "banking",
+          "label": {
+            "en": "banking",
+            "fa_IR": "بانکداری"
+          }
+        },
+        {
+          "value": "banking system",
+          "label": {
+            "en": "banking system",
+            "fa_IR": "نظام بانکی"
+          }
+        },
+        {
+          "value": "bauxite",
+          "label": {
+            "en": "bauxite",
+            "fa_IR": "بوکسیت"
+          }
+        },
+        {
+          "value": "beverages",
+          "label": {
+            "en": "beverages",
+            "fa_IR": "آشامیدنی‌ها"
+          }
+        },
+        {
+          "value": "Bonyad Mostazafan",
+          "label": {
+            "en": "Bonyad Mostazafan",
+            "fa_IR": "بنیاد مستضعفان"
+          }
+        },
+        {
+          "value": "budget",
+          "label": {
+            "en": "budget",
+            "fa_IR": "بودجه"
+          }
+        },
+        {
+          "value": "budget settlement",
+          "label": {
+            "en": "budget settlement",
+            "fa_IR": "تفریغ"
+          }
+        },
+        {
+          "value": "buses",
+          "label": {
+            "en": "buses",
+            "fa_IR": "اتوبوس"
+          }
+        },
+        {
+          "value": "business",
+          "label": {
+            "en": "business",
+            "fa_IR": "تجارت "
+          }
+        },
+        {
+          "value": "Caspian credit institution",
+          "label": {
+            "en": "Caspian credit institution",
+            "fa_IR": "موسسه اعتباری كاسپين"
+          }
+        },
+        {
+          "value": "cause of death",
+          "label": {
+            "en": "cause of death",
+            "fa_IR": "علت مرگ "
+          }
+        },
+        {
+          "value": "chromite",
+          "label": {
+            "en": "chromite",
+            "fa_IR": "کرومیت"
+          }
+        },
+        {
+          "value": "cinema",
+          "label": {
+            "en": "cinema",
+            "fa_IR": "سینما "
+          }
+        },
+        {
+          "value": "city",
+          "label": {
+            "en": "city",
+            "fa_IR": "شهر"
+          }
+        },
+        {
+          "value": "classroom",
+          "label": {
+            "en": "classroom",
+            "fa_IR": "کلاس درسی"
+          }
+        },
+        {
+          "value": "cng",
+          "label": {
+            "en": "cng",
+            "fa_IR": "گاز طبیعی فشرده"
+          }
+        },
+        {
+          "value": "coal",
+          "label": {
+            "en": "coal",
+            "fa_IR": "زغال‌سنگ"
+          }
+        },
+        {
+          "value": "commercial",
+          "label": {
+            "en": "commercial",
+            "fa_IR": "تجاری"
+          }
+        },
+        {
+          "value": "communication",
+          "label": {
+            "en": "communication",
+            "fa_IR": "ارتباطات"
+          }
+        },
+        {
+          "value": "companies",
+          "label": {
+            "en": "companies",
+            "fa_IR": "شرکت‌ها"
+          }
+        },
+        {
+          "value": "computer",
+          "label": {
+            "en": "computer",
+            "fa_IR": "رایانه"
+          }
+        },
+        {
+          "value": "construction",
+          "label": {
+            "en": "construction",
+            "fa_IR": "ساخت و ساز"
+          }
+        },
+        {
+          "value": "construction material",
+          "label": {
+            "en": "construction material",
+            "fa_IR": "مصالح ساختمانی"
+          }
+        },
+        {
+          "value": "construction permit",
+          "label": {
+            "en": "construction permit",
+            "fa_IR": "مجوز ساخت و ساز "
+          }
+        },
+        {
+          "value": "consultant",
+          "label": {
+            "en": "consultant",
+            "fa_IR": "مشاور"
+          }
+        },
+        {
+          "value": "consumption",
+          "label": {
+            "en": "consumption",
+            "fa_IR": "مصرف"
+          }
+        },
+        {
+          "value": "contractor",
+          "label": {
+            "en": "contractor",
+            "fa_IR": "پیمانکار"
+          }
+        },
+        {
+          "value": "copper",
+          "label": {
+            "en": "copper",
+            "fa_IR": "مس"
+          }
+        },
+        {
+          "value": "cost",
+          "label": {
+            "en": "cost",
+            "fa_IR": "هزینه"
+          }
+        },
+        {
+          "value": "country divisions",
+          "label": {
+            "en": "country divisions",
+            "fa_IR": "تقسیمات کشوری"
+          }
+        },
+        {
+          "value": "county",
+          "label": {
+            "en": "county",
+            "fa_IR": "شهرستان"
+          }
+        },
+        {
+          "value": "credit",
+          "label": {
+            "en": "credit",
+            "fa_IR": "اعتبار"
+          }
+        },
+        {
+          "value": "credit union",
+          "label": {
+            "en": "credit union",
+            "fa_IR": "موسسات اعتباری"
+          }
+        },
+        {
+          "value": "crime",
+          "label": {
+            "en": "crime",
+            "fa_IR": "جرم"
+          }
+        },
+        {
+          "value": "crude oil",
+          "label": {
+            "en": "crude oil",
+            "fa_IR": "نفت خام "
+          }
+        },
+        {
+          "value": "cultivation",
+          "label": {
+            "en": "cultivation",
+            "fa_IR": "کشت ، زراعت"
+          }
+        },
+        {
+          "value": "culture",
+          "label": {
+            "en": "culture",
+            "fa_IR": "فرهنگ"
+          }
+        },
+        {
+          "value": "currency",
+          "label": {
+            "en": "currency",
+            "fa_IR": "واحد پول"
+          }
+        },
+        {
+          "value": "dam",
+          "label": {
+            "en": "dam",
+            "fa_IR": "سد"
+          }
+        },
+        {
+          "value": "death",
+          "label": {
+            "en": "death",
+            "fa_IR": "مرگ|فوت|مرگ و میر"
+          }
+        },
+        {
+          "value": "debt",
+          "label": {
+            "en": "debt",
+            "fa_IR": "بدهی"
+          }
+        },
+        {
+          "value": "decompose",
+          "label": {
+            "en": "decompose",
+            "fa_IR": "تجزیه"
+          }
+        },
+        {
+          "value": "decorative stone",
+          "label": {
+            "en": "decorative stone",
+            "fa_IR": "سنگ‌های تزئینی"
+          }
+        },
+        {
+          "value": "defense",
+          "label": {
+            "en": "defense",
+            "fa_IR": "امور دفاعی"
+          }
+        },
+        {
+          "value": "degree",
+          "label": {
+            "en": "degree",
+            "fa_IR": "مدرک"
+          }
+        },
+        {
+          "value": "deposits",
+          "label": {
+            "en": "deposits",
+            "fa_IR": "سپرده "
+          }
+        },
+        {
+          "value": "Dey bank",
+          "label": {
+            "en": "Dey bank",
+            "fa_IR": "بانک دی"
+          }
+        },
+        {
+          "value": "diploma",
+          "label": {
+            "en": "diploma",
+            "fa_IR": "دیپلم"
+          }
+        },
+        {
+          "value": "disease",
+          "label": {
+            "en": "disease",
+            "fa_IR": "بیماری"
+          }
+        },
+        {
+          "value": "district",
+          "label": {
+            "en": "district",
+            "fa_IR": "بخش"
+          }
+        },
+        {
+          "value": "divorce",
+          "label": {
+            "en": "divorce",
+            "fa_IR": "طلاق"
+          }
+        },
+        {
+          "value": "dolomite",
+          "label": {
+            "en": "dolomite",
+            "fa_IR": "دولومیت"
+          }
+        },
+        {
+          "value": "domestic sector",
+          "label": {
+            "en": "domestic sector",
+            "fa_IR": "امور داخلی"
+          }
+        },
+        {
+          "value": "economics",
+          "label": {
+            "en": "economics",
+            "fa_IR": "اقتصاد"
+          }
+        },
+        {
+          "value": "economy",
+          "label": {
+            "en": "economy",
+            "fa_IR": "اقتصاد"
+          }
+        },
+        {
+          "value": "education",
+          "label": {
+            "en": "education",
+            "fa_IR": "آموزش"
+          }
+        },
+        {
+          "value": "Eghtesad Novin bank",
+          "label": {
+            "en": "Eghtesad Novin bank",
+            "fa_IR": "بانک اقتصاد نوین"
+          }
+        },
+        {
+          "value": "electricity",
+          "label": {
+            "en": "electricity",
+            "fa_IR": "برق"
+          }
+        },
+        {
+          "value": "emergency",
+          "label": {
+            "en": "emergency",
+            "fa_IR": "اورژانس"
+          }
+        },
+        {
+          "value": "employment",
+          "label": {
+            "en": "employment",
+            "fa_IR": "اشتغال "
+          }
+        },
+        {
+          "value": "energy",
+          "label": {
+            "en": "energy",
+            "fa_IR": "انرژی"
+          }
+        },
+        {
+          "value": "engineering",
+          "label": {
+            "en": "engineering",
+            "fa_IR": "مهندسی"
+          }
+        },
+        {
+          "value": "environment",
+          "label": {
+            "en": "environment",
+            "fa_IR": "محیط زیست"
+          }
+        },
+        {
+          "value": "expenditure",
+          "label": {
+            "en": "expenditure",
+            "fa_IR": "مخارج"
+          }
+        },
+        {
+          "value": "exports",
+          "label": {
+            "en": "exports",
+            "fa_IR": "صادرات "
+          }
+        },
+        {
+          "value": "female-women",
+          "label": {
+            "en": "female-women",
+            "fa_IR": "زن"
+          }
+        },
+        {
+          "value": "finance",
+          "label": {
+            "en": "finance",
+            "fa_IR": "امور مالی"
+          }
+        },
+        {
+          "value": "food",
+          "label": {
+            "en": "food",
+            "fa_IR": "مواد غذایی"
+          }
+        },
+        {
+          "value": "food safety",
+          "label": {
+            "en": "food safety",
+            "fa_IR": "ایمنی غذایی"
+          }
+        },
+        {
+          "value": "foreign affairs",
+          "label": {
+            "en": "foreign affairs",
+            "fa_IR": "امور خارجی"
+          }
+        },
+        {
+          "value": "foreign bank",
+          "label": {
+            "en": "foreign bank",
+            "fa_IR": "بانک خارجی"
+          }
+        },
+        {
+          "value": "fuel",
+          "label": {
+            "en": "fuel",
+            "fa_IR": "سوخت"
+          }
+        },
+        {
+          "value": "Gardeshgari bank",
+          "label": {
+            "en": "Gardeshgari bank",
+            "fa_IR": "بانک گردشگری"
+          }
+        },
+        {
+          "value": "gas",
+          "label": {
+            "en": "gas",
+            "fa_IR": "گاز"
+          }
+        },
+        {
+          "value": "gasoline-petrol",
+          "label": {
+            "en": "gasoline-petrol",
+            "fa_IR": "بنزین"
+          }
+        },
+        {
+          "value": "gdp",
+          "label": {
+            "en": "gdp",
+            "fa_IR": "تولید ناخالص داخلی"
+          }
+        },
+        {
+          "value": "gender",
+          "label": {
+            "en": "gender",
+            "fa_IR": "جنسیت"
+          }
+        },
+        {
+          "value": "Ghavamin bank",
+          "label": {
+            "en": "Ghavamin bank",
+            "fa_IR": "بانک قوامین"
+          }
+        },
+        {
+          "value": "global",
+          "label": {
+            "en": "global",
+            "fa_IR": "جهانی"
+          }
+        },
+        {
+          "value": "governemental bank",
+          "label": {
+            "en": "governemental bank",
+            "fa_IR": "بانک دولتی"
+          }
+        },
+        {
+          "value": "government",
+          "label": {
+            "en": "government",
+            "fa_IR": "دولت"
+          }
+        },
+        {
+          "value": "graduates",
+          "label": {
+            "en": "graduates",
+            "fa_IR": "فارغ‌التحصیلان"
+          }
+        },
+        {
+          "value": "health",
+          "label": {
+            "en": "health",
+            "fa_IR": "سلامت"
+          }
+        },
+        {
+          "value": "health care",
+          "label": {
+            "en": "health care",
+            "fa_IR": "بهداشت"
+          }
+        },
+        {
+          "value": "Hekmat Iranian bank",
+          "label": {
+            "en": "Hekmat Iranian bank",
+            "fa_IR": "بانک حکمت ایرانیان"
+          }
+        },
+        {
+          "value": "high school",
+          "label": {
+            "en": "high school",
+            "fa_IR": "دبیرستان "
+          }
+        },
+        {
+          "value": "high school diploma",
+          "label": {
+            "en": "high school diploma",
+            "fa_IR": "دیپلم "
+          }
+        },
+        {
+          "value": "hospital",
+          "label": {
+            "en": "hospital",
+            "fa_IR": "بیمارستان"
+          }
+        },
+        {
+          "value": "hotels",
+          "label": {
+            "en": "hotels",
+            "fa_IR": "هتل"
+          }
+        },
+        {
+          "value": "household",
+          "label": {
+            "en": "household",
+            "fa_IR": "خانوار"
+          }
+        },
+        {
+          "value": "housing",
+          "label": {
+            "en": "housing",
+            "fa_IR": "مسکن"
+          }
+        },
+        {
+          "value": "humanities",
+          "label": {
+            "en": "humanities",
+            "fa_IR": "علوم انسانی"
+          }
+        },
+        {
+          "value": "ICT",
+          "label": {
+            "en": "ICT",
+            "fa_IR": "فناوری اطلاعات و ارتباطات"
+          }
+        },
+        {
+          "value": "immigration",
+          "label": {
+            "en": "immigration",
+            "fa_IR": "مهاجرت"
+          }
+        },
+        {
+          "value": "import",
+          "label": {
+            "en": "import",
+            "fa_IR": "واردات "
+          }
+        },
+        {
+          "value": "income",
+          "label": {
+            "en": "income",
+            "fa_IR": "درآمد"
+          }
+        },
+        {
+          "value": "industrial",
+          "label": {
+            "en": "industrial",
+            "fa_IR": "صنعتی"
+          }
+        },
+        {
+          "value": "industry",
+          "label": {
+            "en": "industry",
+            "fa_IR": "صنعت "
+          }
+        },
+        {
+          "value": "inflation",
+          "label": {
+            "en": "inflation",
+            "fa_IR": "تورم"
+          }
+        },
+        {
+          "value": "internet",
+          "label": {
+            "en": "internet",
+            "fa_IR": "اینترنت"
+          }
+        },
+        {
+          "value": "investment",
+          "label": {
+            "en": "investment",
+            "fa_IR": "سرمایه‌گذاری"
+          }
+        },
+        {
+          "value": "Iran",
+          "label": {
+            "en": "Iran",
+            "fa_IR": "ایران"
+          }
+        },
+        {
+          "value": "Iran zamin bank",
+          "label": {
+            "en": "Iran zamin bank",
+            "fa_IR": "بانک ایران زمین"
+          }
+        },
+        {
+          "value": "Karafarinan bank",
+          "label": {
+            "en": "Karafarinan bank",
+            "fa_IR": "بانک کارآفرین"
+          }
+        },
+        {
+          "value": "Kowsar Markazi credit institution",
+          "label": {
+            "en": "Kowsar Markazi credit institution",
+            "fa_IR": "موسسه اعتباری كوثر مرکزی"
+          }
+        },
+        {
+          "value": "Khavaremiyaneh bank",
+          "label": {
+            "en": "Khavaremiyaneh bank",
+            "fa_IR": "بانک خاورمیانه"
+          }
+        },
+        {
+          "value": "labour force",
+          "label": {
+            "en": "labour force",
+            "fa_IR": "نیروی کار"
+          }
+        },
+        {
+          "value": "land",
+          "label": {
+            "en": "land",
+            "fa_IR": "زمین "
+          }
+        },
+        {
+          "value": "literacy",
+          "label": {
+            "en": "literacy",
+            "fa_IR": "سواد"
+          }
+        },
+        {
+          "value": "male-men",
+          "label": {
+            "en": "male-men",
+            "fa_IR": "مرد"
+          }
+        },
+        {
+          "value": "marine",
+          "label": {
+            "en": "marine",
+            "fa_IR": "دریایی"
+          }
+        },
+        {
+          "value": "marriage",
+          "label": {
+            "en": "marriage",
+            "fa_IR": "ازدواج"
+          }
+        },
+        {
+          "value": "Mashhad",
+          "label": {
+            "en": "Mashhad",
+            "fa_IR": "مشهد"
+          }
+        },
+        {
+          "value": "masters",
+          "label": {
+            "en": "masters",
+            "fa_IR": " کارشناسی ارشد "
+          }
+        },
+        {
+          "value": "maths and physics",
+          "label": {
+            "en": "maths and physics",
+            "fa_IR": "ریاضی فیزیک"
+          }
+        },
+        {
+          "value": "media",
+          "label": {
+            "en": "media",
+            "fa_IR": "رسانه "
+          }
+        },
+        {
+          "value": "Mehr eghtesad bank",
+          "label": {
+            "en": "Mehr eghtesad bank",
+            "fa_IR": "بانک مهر اقتصاد"
+          }
+        },
+        {
+          "value": "Mehr housing",
+          "label": {
+            "en": "Mehr housing",
+            "fa_IR": "مسکن مهر"
+          }
+        },
+        {
+          "value": "Melal credit institution",
+          "label": {
+            "en": "Melal credit institution",
+            "fa_IR": "موسسه اعتباری ملل"
+          }
+        },
+        {
+          "value": "Mellat bank",
+          "label": {
+            "en": "Mellat bank",
+            "fa_IR": "بانک ملت"
+          }
+        },
+        {
+          "value": "meteorology",
+          "label": {
+            "en": "meteorology",
+            "fa_IR": "هواشناسی"
+          }
+        },
+        {
+          "value": "middle schools",
+          "label": {
+            "en": "middle schools",
+            "fa_IR": "راهنمایی"
+          }
+        },
+        {
+          "value": "minerals",
+          "label": {
+            "en": "minerals",
+            "fa_IR": "مواد معدنی"
+          }
+        },
+        {
+          "value": "mining",
+          "label": {
+            "en": "mining",
+            "fa_IR": "معدن"
+          }
+        },
+        {
+          "value": "monetary",
+          "label": {
+            "en": "monetary",
+            "fa_IR": "پولی"
+          }
+        },
+        {
+          "value": "Mostazafan foundation",
+          "label": {
+            "en": "Mostazafan foundation",
+            "fa_IR": "بنیاد مستضعفان"
+          }
+        },
+        {
+          "value": "municipality",
+          "label": {
+            "en": "municipality",
+            "fa_IR": "شهرداری"
+          }
+        },
+        {
+          "value": "municipality budget",
+          "label": {
+            "en": "municipality budget",
+            "fa_IR": "بودجه شهرداری"
+          }
+        },
+        {
+          "value": "national",
+          "label": {
+            "en": "national",
+            "fa_IR": "ملی"
+          }
+        },
+        {
+          "value": "national security",
+          "label": {
+            "en": "national security",
+            "fa_IR": "امنیت ملی"
+          }
+        },
+        {
+          "value": "national statistics",
+          "label": {
+            "en": "national statistics",
+            "fa_IR": "آمار ملی"
+          }
+        },
+        {
+          "value": "news",
+          "label": {
+            "en": "news",
+            "fa_IR": "خبر"
+          }
+        },
+        {
+          "value": "newspaper",
+          "label": {
+            "en": "newspaper",
+            "fa_IR": "روزنامه"
+          }
+        },
+        {
+          "value": "nomads",
+          "label": {
+            "en": "nomads",
+            "fa_IR": "عشایر"
+          }
+        },
+        {
+          "value": "non banking",
+          "label": {
+            "en": "non banking",
+            "fa_IR": "غیربانکی"
+          }
+        },
+        {
+          "value": "non governmental",
+          "label": {
+            "en": "non governmental",
+            "fa_IR": "غیر دولتی"
+          }
+        },
+        {
+          "value": "nongovernmental bank",
+          "label": {
+            "en": "nongovernmental bank",
+            "fa_IR": "بانک غیردولتی"
+          }
+        },
+        {
+          "value": "Nour credit institution",
+          "label": {
+            "en": "Nour credit institution",
+            "fa_IR": "موسسه اعتباری نور"
+          }
+        },
+        {
+          "value": "oil",
+          "label": {
+            "en": "oil",
+            "fa_IR": "نفت"
+          }
+        },
+        {
+          "value": "oil production",
+          "label": {
+            "en": "oil production",
+            "fa_IR": "تولید نفتی"
+          }
+        },
+        {
+          "value": "OPEC",
+          "label": {
+            "en": "OPEC",
+            "fa_IR": "اوپک"
+          }
+        },
+        {
+          "value": "Parsian bank",
+          "label": {
+            "en": "Parsian bank",
+            "fa_IR": "بانک پارسیان"
+          }
+        },
+        {
+          "value": "Pasargad bank",
+          "label": {
+            "en": "Pasargad bank",
+            "fa_IR": "بانک پارسارگاد"
+          }
+        },
+        {
+          "value": "permits",
+          "label": {
+            "en": "permits",
+            "fa_IR": "مجوز"
+          }
+        },
+        {
+          "value": "pesticides",
+          "label": {
+            "en": "pesticides",
+            "fa_IR": "آفت‌کش"
+          }
+        },
+        {
+          "value": "pests",
+          "label": {
+            "en": "pests",
+            "fa_IR": "آفت‌ کشاورزی"
+          }
+        },
+        {
+          "value": "petrol",
+          "label": {
+            "en": "petrol",
+            "fa_IR": "بنزین"
+          }
+        },
+        {
+          "value": "petroleum",
+          "label": {
+            "en": "petroleum",
+            "fa_IR": "نفت"
+          }
+        },
+        {
+          "value": "petroleum product",
+          "label": {
+            "en": "petroleum product",
+            "fa_IR": "فرآورده‌های نفتی"
+          }
+        },
+        {
+          "value": "phd",
+          "label": {
+            "en": "phd",
+            "fa_IR": "دکترای حرفه‌ای "
+          }
+        },
+        {
+          "value": "phone line",
+          "label": {
+            "en": "phone line",
+            "fa_IR": "خط تلفن"
+          }
+        },
+        {
+          "value": "police station",
+          "label": {
+            "en": "police station",
+            "fa_IR": "ایستگاه پلیس"
+          }
+        },
+        {
+          "value": "pollution",
+          "label": {
+            "en": "pollution",
+            "fa_IR": "آلودگی"
+          }
+        },
+        {
+          "value": "population",
+          "label": {
+            "en": "population",
+            "fa_IR": "جمعیت"
+          }
+        },
+        {
+          "value": "population growth",
+          "label": {
+            "en": "population growth",
+            "fa_IR": "رشد جمعیت"
+          }
+        },
+        {
+          "value": "post",
+          "label": {
+            "en": "post",
+            "fa_IR": "پست"
+          }
+        },
+        {
+          "value": "Post bank",
+          "label": {
+            "en": "Post bank",
+            "fa_IR": "پست بانک"
+          }
+        },
+        {
+          "value": "post doctorate",
+          "label": {
+            "en": "post doctorate",
+            "fa_IR": "دکترای تخصصی"
+          }
+        },
+        {
+          "value": "post office",
+          "label": {
+            "en": "post office",
+            "fa_IR": "اداره پست"
+          }
+        },
+        {
+          "value": "poverty",
+          "label": {
+            "en": "poverty",
+            "fa_IR": "فقر"
+          }
+        },
+        {
+          "value": "power",
+          "label": {
+            "en": "power",
+            "fa_IR": "قدرت"
+          }
+        },
+        {
+          "value": "practical science",
+          "label": {
+            "en": "practical science",
+            "fa_IR": "علوم تجربی"
+          }
+        },
+        {
+          "value": "pre university",
+          "label": {
+            "en": "pre university",
+            "fa_IR": "پیش‌‌دانشگاهی"
+          }
+        },
+        {
+          "value": "precipitation",
+          "label": {
+            "en": "precipitation",
+            "fa_IR": "بارندگی"
+          }
+        },
+        {
+          "value": "premit",
+          "label": {
+            "en": "premit",
+            "fa_IR": "مجوز"
+          }
+        },
+        {
+          "value": "preschool",
+          "label": {
+            "en": "preschool",
+            "fa_IR": "پیش‌دبستانی"
+          }
+        },
+        {
+          "value": "press",
+          "label": {
+            "en": "press",
+            "fa_IR": "مطبوعات"
+          }
+        },
+        {
+          "value": "price",
+          "label": {
+            "en": "price",
+            "fa_IR": "قیمت"
+          }
+        },
+        {
+          "value": "primary school",
+          "label": {
+            "en": "primary school",
+            "fa_IR": "دبستان"
+          }
+        },
+        {
+          "value": "private sector",
+          "label": {
+            "en": "private sector",
+            "fa_IR": "بخش خصوصی"
+          }
+        },
+        {
+          "value": "production",
+          "label": {
+            "en": "production",
+            "fa_IR": "تولید"
+          }
+        },
+        {
+          "value": "property",
+          "label": {
+            "en": "property",
+            "fa_IR": "دارایی"
+          }
+        },
+        {
+          "value": "province",
+          "label": {
+            "en": "province",
+            "fa_IR": "استان"
+          }
+        },
+        {
+          "value": "province area",
+          "label": {
+            "en": "province area",
+            "fa_IR": "مساحت استان"
+          }
+        },
+        {
+          "value": "public institutions",
+          "label": {
+            "en": "public institutions",
+            "fa_IR": "موسسات دولتی"
+          }
+        },
+        {
+          "value": "public sector",
+          "label": {
+            "en": "public sector",
+            "fa_IR": "بخش دولتی"
+          }
+        },
+        {
+          "value": "recycle",
+          "label": {
+            "en": "recycle",
+            "fa_IR": "بازیافت"
+          }
+        },
+        {
+          "value": "rent",
+          "label": {
+            "en": "rent",
+            "fa_IR": "اجاره"
+          }
+        },
+        {
+          "value": "Resalat gharzolhasaneh bank",
+          "label": {
+            "en": "Resalat gharzolhasaneh bank",
+            "fa_IR": "بانک قرض‌الحسنه رسالت"
+          }
+        },
+        {
+          "value": "research",
+          "label": {
+            "en": "research",
+            "fa_IR": "تحقیق ، پژوهش"
+          }
+        },
+        {
+          "value": "reservoir capacity",
+          "label": {
+            "en": "reservoir capacity",
+            "fa_IR": "ظرفیت مخزن"
+          }
+        },
+        {
+          "value": "revenue",
+          "label": {
+            "en": "revenue",
+            "fa_IR": "درآمد"
+          }
+        },
+        {
+          "value": "revenue sources",
+          "label": {
+            "en": "revenue sources",
+            "fa_IR": "منابع درآمدی"
+          }
+        },
+        {
+          "value": "river",
+          "label": {
+            "en": "river",
+            "fa_IR": "رودخانه ، رود"
+          }
+        },
+        {
+          "value": "road accidents",
+          "label": {
+            "en": "road accidents",
+            "fa_IR": "تصادفات جاده‌ای"
+          }
+        },
+        {
+          "value": "rural",
+          "label": {
+            "en": "rural",
+            "fa_IR": "روستایی"
+          }
+        },
+        {
+          "value": "rural district",
+          "label": {
+            "en": "rural district",
+            "fa_IR": "دهستان"
+          }
+        },
+        {
+          "value": "Saderat bank",
+          "label": {
+            "en": "Saderat bank",
+            "fa_IR": "بانک صادرات"
+          }
+        },
+        {
+          "value": "Saman bank",
+          "label": {
+            "en": "Saman bank",
+            "fa_IR": "بانک سامان"
+          }
+        },
+        {
+          "value": "Samen credit institution",
+          "label": {
+            "en": "Samen credit institution",
+            "fa_IR": "موسسه اعتباری ثامن"
+          }
+        },
+        {
+          "value": "Sarmayeh bank",
+          "label": {
+            "en": "Sarmayeh bank",
+            "fa_IR": "بانک سرمایه"
+          }
+        },
+        {
+          "value": "school",
+          "label": {
+            "en": "school",
+            "fa_IR": "مدرسه"
+          }
+        },
+        {
+          "value": "science",
+          "label": {
+            "en": "science",
+            "fa_IR": "علوم تجربی"
+          }
+        },
+        {
+          "value": "security affairs",
+          "label": {
+            "en": "security affairs",
+            "fa_IR": "امور امنیتی"
+          }
+        },
+        {
+          "value": "Shahr bank",
+          "label": {
+            "en": "Shahr bank",
+            "fa_IR": "بانک شهر"
+          }
+        },
+        {
+          "value": "share",
+          "label": {
+            "en": "share",
+            "fa_IR": "سهام"
+          }
+        },
+        {
+          "value": "shareholders",
+          "label": {
+            "en": "shareholders",
+            "fa_IR": "سهامداران"
+          }
+        },
+        {
+          "value": "Shiraz",
+          "label": {
+            "en": "Shiraz",
+            "fa_IR": "شیراز"
+          }
+        },
+        {
+          "value": "Sina bank",
+          "label": {
+            "en": "Sina bank",
+            "fa_IR": "بانک سینا"
+          }
+        },
+        {
+          "value": "social affairs",
+          "label": {
+            "en": "social affairs",
+            "fa_IR": "امور اجتماعی"
+          }
+        },
+        {
+          "value": "social economics",
+          "label": {
+            "en": "social economics",
+            "fa_IR": "اجتماعی-اقتصادی"
+          }
+        },
+        {
+          "value": "social security",
+          "label": {
+            "en": "social security",
+            "fa_IR": "امنیت اجتماعی"
+          }
+        },
+        {
+          "value": "sport",
+          "label": {
+            "en": "sport",
+            "fa_IR": "ورزش"
+          }
+        },
+        {
+          "value": "stock",
+          "label": {
+            "en": "stock",
+            "fa_IR": "بورس"
+          }
+        },
+        {
+          "value": "student",
+          "label": {
+            "en": "student",
+            "fa_IR": "دانش‌آموز"
+          }
+        },
+        {
+          "value": "tax",
+          "label": {
+            "en": "tax",
+            "fa_IR": "مالیات"
+          }
+        },
+        {
+          "value": "technical and vocational",
+          "label": {
+            "en": "technical and vocational",
+            "fa_IR": "فنی و حرفه‌ای"
+          }
+        },
+        {
+          "value": "technology",
+          "label": {
+            "en": "technology",
+            "fa_IR": "تکنولوٰژی"
+          }
+        },
+        {
+          "value": "Tehran",
+          "label": {
+            "en": "Tehran",
+            "fa_IR": "تهران"
+          }
+        },
+        {
+          "value": "Tehran municipality",
+          "label": {
+            "en": "Tehran municipality",
+            "fa_IR": "شهرداری تهران"
+          }
+        },
+        {
+          "value": "Tejarat bank",
+          "label": {
+            "en": "Tejarat bank",
+            "fa_IR": "بانک تجارت"
+          }
+        },
+        {
+          "value": "telephone",
+          "label": {
+            "en": "telephone",
+            "fa_IR": "تلفن"
+          }
+        },
+        {
+          "value": "television",
+          "label": {
+            "en": "television",
+            "fa_IR": "تلویزیون"
+          }
+        },
+        {
+          "value": "tobacco",
+          "label": {
+            "en": "tobacco",
+            "fa_IR": "دخانیات"
+          }
+        },
+        {
+          "value": "Toseeh credit institution",
+          "label": {
+            "en": "Toseeh credit institution",
+            "fa_IR": "موسسه اعتباری توسعه"
+          }
+        },
+        {
+          "value": "tourism",
+          "label": {
+            "en": "tourism",
+            "fa_IR": "گردشگری"
+          }
+        },
+        {
+          "value": "trade",
+          "label": {
+            "en": "trade",
+            "fa_IR": "تجارت"
+          }
+        },
+        {
+          "value": "transportation",
+          "label": {
+            "en": "transportation",
+            "fa_IR": "حمل و نقل"
+          }
+        },
+        {
+          "value": "unemployment",
+          "label": {
+            "en": "unemployment",
+            "fa_IR": "بیکاری"
+          }
+        },
+        {
+          "value": "university",
+          "label": {
+            "en": "university",
+            "fa_IR": "دانشگاه"
+          }
+        },
+        {
+          "value": "urban",
+          "label": {
+            "en": "urban",
+            "fa_IR": "شهری"
+          }
+        },
+        {
+          "value": "urban planning",
+          "label": {
+            "en": "urban planning",
+            "fa_IR": "برنامه‌ریزی شهری"
+          }
+        },
+        {
+          "value": "village",
+          "label": {
+            "en": "village",
+            "fa_IR": "روستا"
+          }
+        },
+        {
+          "value": "waste",
+          "label": {
+            "en": "waste",
+            "fa_IR": "زباله"
+          }
+        },
+        {
+          "value": "water",
+          "label": {
+            "en": "water",
+            "fa_IR": "آب"
+          }
+        },
+        {
+          "value": "wealth",
+          "label": {
+            "en": "wealth",
+            "fa_IR": "ثروت"
+          }
+        },
+        {
+          "value": "weather",
+          "label": {
+            "en": "weather",
+            "fa_IR": "هوا"
+          }
+        },
+        {
+          "value": "welfare",
+          "label": {
+            "en": "welfare",
+            "fa_IR": "رفاه"
+          }
+        },
+        {
+          "value": "work",
+          "label": {
+            "en": "work",
+            "fa_IR": "کار"
+          }
+        },
+        {
+          "value": "youth",
+          "label": {
+            "en": "youth",
+            "fa_IR": "جوانان"
+          }
+        }
+      ]
+    },
+    {
+      "field_name": "owner_org",
+      "label": {
+        "en": "Organization",
+        "fa_IR": "سازمان"
+      },
+      "preset": "dataset_organization"
+    },
+    {
+      "field_name": "date_start_gregorian",
+      "label": {
+        "en": "Start Date (Gregorian)",
+        "fa_IR": "تاریخ شروع (میلادی)"
+      },
+      "form_placeholder": {
+        "en": "The beginning of the time period covered in the dataset (in the Gregorian calendar)",
+        "fa_IR": "The beginning of the time period covered in the dataset (in the Gregorian calendar)"
+      },
+      "preset": "date"
+    },
+    {
+      "field_name": "date_end_gregorian",
+      "label": {
+        "en": "End Date (Gregorian)",
+        "fa_IR": "تاریخ پایان (میلادی)"
+      },
+      "form_placeholder": {
+        "en": "The end of the time period covered in the dataset (in the Gregorian calendar)",
+        "fa_IR": "The end of the time period covered in the dataset (in the Gregorian calendar)"
+      },
+      "preset": "date"
+    },
+    {
+      "field_name": "date_start_iranian",
+      "label": {
+        "en": "Start Date (Iranian)",
+        "fa_IR": "تاریخ شروع (ایرانی)"
+      },
+      "form_placeholder": {
+        "en": "The beginning of the time period covered in the dataset (in the Iranian calendar)",
+        "fa_IR": "The beginning of the time period covered in the dataset (in the Iranian calendar)"
+      },
+      "preset": "date"
+    },
+    {
+      "field_name": "date_end_iranian",
+      "label": {
+        "en": "End Date (Iranian)",
+        "fa_IR": "تاریخ پایان (ایرانی)"
+      },
+      "form_placeholder": {
+        "en": "The end of the time period covered in the dataset (in the Iranian calendar)",
+        "fa_IR": "The end of the time period covered in the dataset (in the Iranian calendar)"
+      },
+      "preset": "date"
+    },
+    {
+      "field_name": "publisher",
+      "label": {
+        "en": "Publisher",
+        "fa_IR": "ناشر"
+      },
+      "preset": "select",
+      "choices": [
+        {
+         "value": "Behnam Ideh Gostar Group",
+         "label": {
+           "en": "Behnam Ideh Gostar Group",
+           "fa_IR": "گروه مهندسی بهنام ایده گستر"
+         }
+        },
+        {
+         "value": "Central Bank of Iran",
+         "label": {
+           "en": "Central Bank of Iran",
+           "fa_IR": "بانک مرکزی ایران"
+         }
+        },
+        {
+         "value": "Dar al-Hadith Scientific Cultural Institute",
+         "label": {
+           "en": "Dar al-Hadith Scientific Cultural Institute",
+           "fa_IR": "موسسه علمی فرهنگی دارالحدیث"
+         }
+        },
+        {
+         "value": "Department of Environment ",
+         "label": {
+           "en": "Department of Environment ",
+           "fa_IR": "سازمان حفاظت محیط زیست"
+         }
+        },
+        {
+         "value": "E-Commerce Development Centre of Iran",
+         "label": {
+           "en": "E-Commerce Development Centre of Iran",
+           "fa_IR": "مرکز توسعه تجارت الکترونیکی ایران"
+         }
+        },
+        {
+         "value": "Iran President Deputy Strategic Planning and Control",
+         "label": {
+           "en": "Iran President Deputy Strategic Planning and Control",
+           "fa_IR": "معاونت برنامه‌ریزی و نظارت راهبردی رییس جمهور"
+         }
+        },
+        {
+         "value": "Iran Water Resources Management Company",
+         "label": {
+           "en": "Iran Water Resources Management Company",
+           "fa_IR": "شرکت مدیریت منابع آب ایران"
+         }
+        },
+        {
+         "value": "Islamic Parliament Research Centre Of Iran",
+         "label": {
+           "en": "Islamic Parliament Research Centre Of Iran",
+           "fa_IR": "مرکز تحقیقات مجلس شورای اسلامی"
+         }
+        },
+        {
+         "value": "Islamic Republic of Iran Customs",
+         "label": {
+           "en": "Islamic Republic of Iran Customs",
+           "fa_IR": "گمرک جمهوری اسلامی ایران"
+         }
+        },
+        {
+         "value": "Islamic Revolution Mostazafan Foundation",
+         "label": {
+           "en": "Islamic Revolution Mostazafan Foundation",
+           "fa_IR": "بنیاد مستضعفان انقلاب اسلامی"
+         }
+        },
+        {
+         "value": "Management and Planning Organisation of Iran",
+         "label": {
+           "en": "Management and Planning Organisation of Iran",
+           "fa_IR": "سازمان مدیریت و برنامه‌ریزی کشور"
+         }
+        },
+        {
+         "value": "Mashhad municipality",
+         "label": {
+           "en": "Mashhad municipality",
+           "fa_IR": "شهرداری مشهد"
+         }
+        },
+        {
+         "value": "Ministry of Agriculture-Jahad",
+         "label": {
+           "en": "Ministry of Agriculture-Jahad",
+           "fa_IR": "وزارت جهاد کشاورزی"
+         }
+        },
+        {
+         "value": "Ministry of Cooperatives Labour and Social Welfare",
+         "label": {
+           "en": "Ministry of Cooperatives Labour and Social Welfare",
+           "fa_IR": "وزارت تعاون، کار و رفاه اجتماعی"
+         }
+        },
+        {
+         "value": "Ministry of Economic Affairs and Finance ",
+         "label": {
+           "en": "Ministry of Economic Affairs and Finance ",
+           "fa_IR": "وزارت امور اقتصادی و دارایی"
+         }
+        },
+        {
+         "value": "Ministry of Education",
+         "label": {
+           "en": "Ministry of Education",
+           "fa_IR": "وزارت آموزش و پرورش"
+         }
+        },
+        {
+         "value": "Ministry of Health and Medical Education",
+         "label": {
+           "en": "Ministry of Health and Medical Education",
+           "fa_IR": "وزارت بهداشت، درمان و آموزش پزشکی"
+         }
+        },
+        {
+         "value": "Ministry of Interior",
+         "label": {
+           "en": "Ministry of Interior",
+           "fa_IR": "وزارت کشور"
+         }
+        },
+        {
+         "value": "Ministry of Road and Urban Development",
+         "label": {
+           "en": "Ministry of Road and Urban Development",
+           "fa_IR": "وزارت راه و شهرسازی جمهوری اسلامی ایران"
+         }
+        },
+        {
+         "value": "Ministry of Science, Research and Technology",
+         "label": {
+           "en": "Ministry of Science, Research and Technology",
+           "fa_IR": "وزارت علوم تحقیقات و فناوری و دانشگاه آزاد اسلامی"
+         }
+        },
+        {
+          "value": "National Oil Product Distribution Company",
+          "label": {
+            "en": "National Oil Product Distribution Company",
+            "fa_IR": "شرکت ملی پخش فرآورده‌های نفتی ایران"
+          }
+         },
+        {
+         "value": "National Organisation for Civil Registration",
+         "label": {
+           "en": "National Organisation for Civil Registration",
+           "fa_IR": "سازمان ثبت احوال کشور"
+         }
+        },
+        {
+         "value": "National Organization of Educational Testing",
+         "label": {
+           "en": "National Organization of Educational Testing",
+           "fa_IR": "سازمان سنجش آموزش کشور"
+         }
+        },
+        {
+         "value": "National Park Service",
+         "label": {
+           "en": "National Park Service",
+           "fa_IR": "سازمان خدمات پارک ملی آمریکا"
+         }
+        },
+        {
+         "value": "North Khorasan University of Medical Sciences and Health Services",
+         "label": {
+           "en": "North Khorasan University of Medical Sciences and Health Services",
+           "fa_IR": "دانشگاه علوم پزشکی و خدمات بهداشتی درمانی خراسان شمالی"
+         }
+        },
+        {
+         "value": "Organization of Petroleum Exporters Countries",
+         "label": {
+           "en": "Organization of Petroleum Exporters Countries",
+           "fa_IR": "سازمان کشورهای صادر کننده نفت"
+         }
+        },
+        {
+         "value": "Planning and budget organization of Iran",
+         "label": {
+           "en": "Planning and budget organization of Iran",
+           "fa_IR": "سازمان برنامه و بودجه کشور"
+         }
+        },
+        {
+         "value": "Shiraz municipality",
+         "label": {
+           "en": "Shiraz municipality",
+           "fa_IR": "شهرداری شیراز"
+         }
+        },
+        {
+         "value": "Statistical Centre of Iran",
+         "label": {
+           "en": "Statistical Centre of Iran",
+           "fa_IR": "مرکز آمار ایران"
+         }
+        },
+        {
+         "value": "Supreme Audit Court",
+         "label": {
+           "en": "Supreme Audit Court",
+           "fa_IR": "دیوان محاسبات کشور"
+         }
+        },
+        {
+         "value": "Tebyan Cultural and Information Centre",
+         "label": {
+           "en": "Tebyan Cultural and Information Centre",
+           "fa_IR": "موسسه فرهنگی و اطلاع‌رسانی تبیان"
+         }
+        },
+        {
+         "value": "Tehran Air Quality Control Company",
+         "label": {
+           "en": "Tehran Air Quality Control Company",
+           "fa_IR": "شرکت کنترل کیفیت هوای تهران"
+         }
+        },
+        {
+         "value": "Tehran Municipality",
+         "label": {
+           "en": "Tehran Municipality",
+           "fa_IR": "شهرداری تهران"
+         }
+        },
+        {
+         "value": "Tehran Securities Exchange Technology Management Company",
+         "label": {
+           "en": "Tehran Securities Exchange Technology Management Company",
+           "fa_IR": "شركت مديريت فناوری بورس تهران"
+         }
+        },
+        {
+         "value": "Tehran Waste Management Organisation",
+         "label": {
+           "en": "Tehran Waste Management Organisation",
+           "fa_IR": "سازمان مدیریت پسماند تهران"
+         }
+        },
+        {
+         "value": "The National Land & Housing Organisation",
+         "label": {
+           "en": "The National Land & Housing Organisation",
+           "fa_IR": "سازمان ملی زمین و مسکن"
+         }
+        },
+        {
+         "value": "The World Bank",
+         "label": {
+           "en": "The World Bank",
+           "fa_IR": "بانک جهانی"
+         }
+        },
+        {
+         "value": "Trade Promotion Organization of Iran",
+         "label": {
+           "en": "Trade Promotion Organization of Iran",
+           "fa_IR": "سازمان توسعه تجارت ایران"
+         }
+        },
+        {
+         "value": "Iran Meteorological Organization",
+         "label": {
+           "en": "Iran Meteorological Organization",
+           "fa_IR": "سازمان هواشناسی کشور"
+         }
+        },
+        {
+         "value": "Worldometers",
+         "label": {
+           "en": "Worldometers",
+           "fa_IR": "وردومیترز"
+         }
+        },
+        {
+         "value": "UNESCO",
+         "label": {
+           "en": "UNESCO",
+           "fa_IR": "یونسکو"
+         }
+        }
+      ]
+    },
+    {
+      "field_name": "publisher_url",
+      "label": {
+        "en": "Publisher URL",
+        "fa_IR": "سایت ناشر"
+      },
+      "validators": "url_validator",
+      "form_placeholder": {
+        "en": "Home page of publisher",
+        "fa_IR": "Home page of publisher"
+      },
+      "display_property": "foaf:homepage",
+      "display_snippet": "link.html"
+    },
+    {
+      "field_name": "geographic_string",
+      "label": {
+        "en": "Geographic Scope",
+        "fa_IR": "دامنه جغرافیایی"
+      },
+      "preset": "multiple_checkbox",
+      "choices": [
+        {
+         "value": "National",
+         "label": {
+           "en": "National",
+           "fa_IR": "ملی"
+         }
+        },
+        {
+         "value": "Province",
+         "label": {
+           "en": "Province",
+           "fa_IR": "استان"
+         }
+        },
+        {
+         "value": "County",
+         "label": {
+           "en": "County",
+           "fa_IR": "شهرستان"
+         }
+        },
+        {
+         "value": "District",
+         "label": {
+           "en": "District",
+           "fa_IR": "بخش"
+         }
+        },
+        {
+         "value": "Rural district",
+         "label": {
+           "en": "Rural district",
+           "fa_IR": "دهستان"
+         }
+        },
+        {
+         "value": "City",
+         "label": {
+           "en": "City",
+           "fa_IR": "شهر"
+         }
+        },
+        {
+         "value": "Village",
+         "label": {
+           "en": "Village",
+           "fa_IR": "روستا/ آبادی"
+         }
+        }
+      ]
+    },
+    {
+      "field_name": "methodology",
+      "label": {
+        "en": "IOD Methodology",
+        "fa_IR": "روش تحقیق پایگاه داده باز ایران"
+      },
+      "preset": "select",
+      "choices": [
+        {
+         "value": "Dataset extracted from a PDF table with Tabula",
+         "label": {
+           "en": "Dataset extracted from a PDF table with Tabula",
+           "fa_IR": "مجموعه داده‌ از یک جدول در PDF با نرم‌افزار Tabula استخراج شده است."
+         }
+        },
+        {
+         "value": "Dataset extracted from a PDF table manually by copy and pasting each cell",
+         "label": {
+           "en": "Dataset extracted from a PDF table manually by copy and pasting each cell",
+           "fa_IR": "مجموعه داده‌ از یک جدول PDF به صورت دستی از طریق کپی و چسباندن هر سلول استخراج شده است."
+         }
+        },
+        {
+         "value": "Dataset manually typed from a scanned PDF table",
+         "label": {
+           "en": "Dataset manually typed from a scanned PDF table",
+           "fa_IR": "مجموعه داده‌ها به صورت دستی از یک جدول PDF اسکن شده تایپ شده است."
+         }
+        },
+        {
+         "value": "Dataset extracted from an HTML table with numbers converted from Farsi to English",
+         "label": {
+           "en": "Dataset extracted from an HTML table with numbers converted from Farsi to English",
+           "fa_IR": "مجموعه داده‌ها از یک جدول HTML با اعداد تبدیل شده از فارسی به انگلیسی گرفته شده است."
+         }
+        },
+        {
+         "value": "Dataset extracted from an HTML table",
+         "label": {
+           "en": "Dataset extracted from an HTML table",
+           "fa_IR": "مجموعه داده‌ها از یک جدول HTML استخراج شده است."
+         }
+        },
+        {
+         "value": "Dataset extracted from and Excel file",
+         "label": {
+           "en": "Dataset extracted from and Excel file",
+           "fa_IR": "مجموعه داده ها از یک فایل EXCEL استخراج شده است."
+         }
+        }
+      ],
+      "validators": "not_empty"
+    },
+    {
+      "field_name": "license_id",
+      "label": {
+        "en": "License",
+        "fa_IR": "مجوز"
+      },
+      "form_snippet": "license.html",
+      "help_text": {
+        "en": "License definitions and additional information can be found at http://opendefinition.org/ in English",
+        "fa_IR": "License definitions and additional information can be found at http://opendefinition.org/ in Farsi"
+      },
+      "required": true
+    }
+  ],
+  "resource_fields": [
+    {
+      "field_name": "url",
+      "label": {
+        "en": "File",
+        "fa_IR": "فایل"
+      },
+      "preset": "resource_url_upload"
+    },
+    {
+      "field_name": "name",
+      "label": {
+        "en": "Name",
+        "fa_IR": "نام فایل"
+      },
+      "form_placeholder": {
+        "en": "Name given to the resource",
+        "fa_IR": "Name given to the resource"
+      },
+      "required": true,
+      "validators": "not_empty"
+    },
+    {
+      "field_name": "format",
+      "label": {
+        "en": "File Type",
+        "fa_IR": "نوع فایل"
+      },
+      "preset": "resource_format_autocomplete",
+      "required": true
+    },
+    {
+      "field_name": "notes_translated",
+      "label": {
+        "en": "Notes",
+        "fa_IR": "توضیح"
+      },
+      "preset": "fluent_core_markdown_translated",
+      "form_placeholder": {
+        "en": "Provide notes of the file for English",
+        "fa_IR": "Provide notes of the file for Farsi"
+      }
+    },
+    {
+      "field_name": "publisher",
+      "label": {
+        "en": "Publisher",
+        "fa_IR": "ناشر"
+      },
+      "preset": "select",
+      "choices": [
+        {
+         "value": "Behnam Ideh Gostar Group",
+         "label": {
+           "en": "Behnam Ideh Gostar Group",
+           "fa_IR": "گروه مهندسی بهنام ایده گستر"
+         }
+        },
+        {
+         "value": "Central Bank of Iran",
+         "label": {
+           "en": "Central Bank of Iran",
+           "fa_IR": "بانک مرکزی ایران"
+         }
+        },
+        {
+         "value": "Dar al-Hadith Scientific Cultural Institute",
+         "label": {
+           "en": "Dar al-Hadith Scientific Cultural Institute",
+           "fa_IR": "موسسه علمی فرهنگی دارالحدیث"
+         }
+        },
+        {
+         "value": "Department of Environment ",
+         "label": {
+           "en": "Department of Environment ",
+           "fa_IR": "سازمان حفاظت محیط زیست"
+         }
+        },
+        {
+         "value": "E-Commerce Development Centre of Iran",
+         "label": {
+           "en": "E-Commerce Development Centre of Iran",
+           "fa_IR": "مرکز توسعه تجارت الکترونیکی ایران"
+         }
+        },
+        {
+         "value": "Iran President Deputy Strategic Planning and Control",
+         "label": {
+           "en": "Iran President Deputy Strategic Planning and Control",
+           "fa_IR": "معاونت برنامه‌ریزی و نظارت راهبردی رییس جمهور"
+         }
+        },
+        {
+         "value": "Iran Water Resources Management Company",
+         "label": {
+           "en": "Iran Water Resources Management Company",
+           "fa_IR": "شرکت مدیریت منابع آب ایران"
+         }
+        },
+        {
+         "value": "Islamic Parliament Research Centre Of Iran",
+         "label": {
+           "en": "Islamic Parliament Research Centre Of Iran",
+           "fa_IR": "مرکز تحقیقات مجلس شورای اسلامی"
+         }
+        },
+        {
+         "value": "Islamic Republic of Iran Customs",
+         "label": {
+           "en": "Islamic Republic of Iran Customs",
+           "fa_IR": "گمرک جمهوری اسلامی ایران"
+         }
+        },
+        {
+         "value": "Islamic Revolution Mostazafan Foundation",
+         "label": {
+           "en": "Islamic Revolution Mostazafan Foundation",
+           "fa_IR": "بنیاد مستضعفان انقلاب اسلامی"
+         }
+        },
+        {
+         "value": "Management and Planning Organisation of Iran",
+         "label": {
+           "en": "Management and Planning Organisation of Iran",
+           "fa_IR": "سازمان مدیریت و برنامه‌ریزی کشور"
+         }
+        },
+        {
+         "value": "Mashhad municipality",
+         "label": {
+           "en": "Mashhad municipality",
+           "fa_IR": "شهرداری مشهد"
+         }
+        },
+        {
+         "value": "Ministry of Agriculture-Jahad",
+         "label": {
+           "en": "Ministry of Agriculture-Jahad",
+           "fa_IR": "وزارت جهاد کشاورزی"
+         }
+        },
+        {
+         "value": "Ministry of Cooperatives Labour and Social Welfare",
+         "label": {
+           "en": "Ministry of Cooperatives Labour and Social Welfare",
+           "fa_IR": "وزارت تعاون، کار و رفاه اجتماعی"
+         }
+        },
+        {
+         "value": "Ministry of Economic Affairs and Finance ",
+         "label": {
+           "en": "Ministry of Economic Affairs and Finance ",
+           "fa_IR": "وزارت امور اقتصادی و دارایی"
+         }
+        },
+        {
+         "value": "Ministry of Education",
+         "label": {
+           "en": "Ministry of Education",
+           "fa_IR": "وزارت آموزش و پرورش"
+         }
+        },
+        {
+         "value": "Ministry of Health and Medical Education",
+         "label": {
+           "en": "Ministry of Health and Medical Education",
+           "fa_IR": "وزارت بهداشت، درمان و آموزش پزشکی"
+         }
+        },
+        {
+         "value": "Ministry of Interior",
+         "label": {
+           "en": "Ministry of Interior",
+           "fa_IR": "وزارت کشور"
+         }
+        },
+        {
+         "value": "Ministry of Road and Urban Development",
+         "label": {
+           "en": "Ministry of Road and Urban Development",
+           "fa_IR": "وزارت راه و شهرسازی جمهوری اسلامی ایران"
+         }
+        },
+        {
+         "value": "Ministry of Science, Research and Technology",
+         "label": {
+           "en": "Ministry of Science, Research and Technology",
+           "fa_IR": "وزارت علوم تحقیقات و فناوری و دانشگاه آزاد اسلامی"
+         }
+        },
+        {
+          "value": "National Oil Product Distribution Company",
+          "label": {
+            "en": "National Oil Product Distribution Company",
+            "fa_IR": "شرکت ملی پخش فرآورده‌های نفتی ایران"
+          }
+         },
+        {
+         "value": "National Organisation for Civil Registration",
+         "label": {
+           "en": "National Organisation for Civil Registration",
+           "fa_IR": "سازمان ثبت احوال کشور"
+         }
+        },
+        {
+         "value": "National Organization of Educational Testing",
+         "label": {
+           "en": "National Organization of Educational Testing",
+           "fa_IR": "سازمان سنجش آموزش کشور"
+         }
+        },
+        {
+         "value": "National Park Service",
+         "label": {
+           "en": "National Park Service",
+           "fa_IR": "سازمان خدمات پارک ملی آمریکا"
+         }
+        },
+        {
+         "value": "North Khorasan University of Medical Sciences and Health Services",
+         "label": {
+           "en": "North Khorasan University of Medical Sciences and Health Services",
+           "fa_IR": "دانشگاه علوم پزشکی و خدمات بهداشتی درمانی خراسان شمالی"
+         }
+        },
+        {
+         "value": "Organization of Petroleum Exporters Countries",
+         "label": {
+           "en": "Organization of Petroleum Exporters Countries",
+           "fa_IR": "سازمان کشورهای صادر کننده نفت"
+         }
+        },
+        {
+         "value": "Planning and budget organization of Iran",
+         "label": {
+           "en": "Planning and budget organization of Iran",
+           "fa_IR": "سازمان برنامه و بودجه کشور"
+         }
+        },
+        {
+         "value": "Shiraz municipality",
+         "label": {
+           "en": "Shiraz municipality",
+           "fa_IR": "شهرداری شیراز"
+         }
+        },
+        {
+         "value": "Statistical Centre of Iran",
+         "label": {
+           "en": "Statistical Centre of Iran",
+           "fa_IR": "مرکز آمار ایران"
+         }
+        },
+        {
+         "value": "Supreme Audit Court",
+         "label": {
+           "en": "Supreme Audit Court",
+           "fa_IR": "دیوان محاسبات کشور"
+         }
+        },
+        {
+         "value": "Tebyan Cultural and Information Centre",
+         "label": {
+           "en": "Tebyan Cultural and Information Centre",
+           "fa_IR": "موسسه فرهنگی و اطلاع‌رسانی تبیان"
+         }
+        },
+        {
+         "value": "Tehran Air Quality Control Company",
+         "label": {
+           "en": "Tehran Air Quality Control Company",
+           "fa_IR": "شرکت کنترل کیفیت هوای تهران"
+         }
+        },
+        {
+         "value": "Tehran Municipality",
+         "label": {
+           "en": "Tehran Municipality",
+           "fa_IR": "شهرداری تهران"
+         }
+        },
+        {
+         "value": "Tehran Securities Exchange Technology Management Company",
+         "label": {
+           "en": "Tehran Securities Exchange Technology Management Company",
+           "fa_IR": "شركت مديريت فناوری بورس تهران"
+         }
+        },
+        {
+         "value": "Tehran Waste Management Organisation",
+         "label": {
+           "en": "Tehran Waste Management Organisation",
+           "fa_IR": "سازمان مدیریت پسماند تهران"
+         }
+        },
+        {
+         "value": "The National Land & Housing Organisation",
+         "label": {
+           "en": "The National Land & Housing Organisation",
+           "fa_IR": "سازمان ملی زمین و مسکن"
+         }
+        },
+        {
+         "value": "The World Bank",
+         "label": {
+           "en": "The World Bank",
+           "fa_IR": "بانک جهانی"
+         }
+        },
+        {
+         "value": "Trade Promotion Organization of Iran",
+         "label": {
+           "en": "Trade Promotion Organization of Iran",
+           "fa_IR": "سازمان توسعه تجارت ایران"
+         }
+        }
+      ]
+    },
+    {
+      "field_name": "publisher_url",
+      "label": {
+        "en": "Publisher URL",
+        "fa_IR": "سایت ناشر"
+      },
+      "validators": "url_validator",
+      "form_placeholder": {
+        "en": "Home page of publisher",
+        "fa_IR": "Home page of publisher"
+      },
+      "display_property": "foaf:homepage",
+      "display_snippet": "link.html"
+    },
+    {
+      "field_name": "source_translated",
+      "label": {
+        "en": "Source",
+        "fa_IR": "منبع"
+      },
+      "preset": "fluent_markdown",
+      "form_placeholder": {
+        "en": "Citation of source file that data is extracted from for English",
+        "fa_IR": "Citation of source file that data is extracted from for English"
+      }
+    },
+    {
+      "field_name": "language",
+      "label": {
+        "en": "Language",
+        "fa_IR": "زبان"
+      },
+      "preset": "select",
+      "choices": [
+        {
+         "value": "English",
+         "label": {
+           "en": "English",
+           "fa_IR": "انگلیسی"
+         }
+        },
+        {
+         "value": "Farsi",
+         "label": {
+           "en": "Farsi",
+           "fa_IR": "فارسی"
+         }
+        }
+      ],
+      "validators": "not_empty"
+    },
+    {
+      "field_name": "cleaning_stage",
+      "label": {
+        "en": "Cleaning Stage",
+        "fa_IR": "مرحله تمیز شدن داده"
+      },
+      "preset": "select",
+      "choices": [
+        {
+         "value": "Original Source File",
+         "label": {
+           "en": "Original Source File",
+           "fa_IR": "فایل اصلی"
+         }
+        },
+        {
+         "value": "Scraped without modification",
+         "label": {
+           "en": "Scraped without modification",
+           "fa_IR": "استخراج شده بدون اصلاح"
+         }
+        },
+        {
+         "value": "Cleaned",
+         "label": {
+           "en": "Cleaned",
+           "fa_IR": "تمیز شده "
+         }
+        },
+        {
+         "value": "Cleaned and Aggregated",
+         "label": {
+           "en": "Cleaned and Aggregated",
+           "fa_IR": "تمیز و ادغام شده "
+         }
+        }
+      ],
+      "validators": "not_empty",
+      "required": true
+    }
+  ]
+}
