@@ -23,9 +23,8 @@
     {% endif %}
     {% set notes = h.markdown_extract(package.notes, extract_length=truncate) %}
     {% set publisher = package.publisher %}
-    {#
-      {% set fields = h.scheming_get_dataset_schema('dataset')['dataset_fields'] %}
-      #}
+    {% set fields = h.scheming_get_dataset_schema('dataset')['dataset_fields'] %}
+
 
     {% block package_item %}
       <li class="{{ item_class or "dataset-item" }}">
