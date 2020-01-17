@@ -15,13 +15,17 @@
     #}
     {% set truncate = truncate or 180 %}
     {% set truncate_title = truncate_title or 80 %}
-    <!--{% set title = package.title_translated[h.lang()] or package.title or package.name %}-->
+    {#
+      {% set title = package.title_translated[h.lang()] or package.title or package.name %}
+    #}
     {% if title_translated in package and package.title_translated[h.odm_dataset_get_current_language()] %}
       {% set title = package.title_translated[h.odm_dataset_get_current_language()] %}
     {% endif %}
     {% set notes = h.markdown_extract(package.notes, extract_length=truncate) %}
     {% set publisher = package.publisher %}
-    <!--{% set fields = h.scheming_get_dataset_schema('dataset')['dataset_fields'] %}-->
+    {#
+      {% set fields = h.scheming_get_dataset_schema('dataset')['dataset_fields'] %}
+      #}
 
     {% block package_item %}
       <li class="{{ item_class or "dataset-item" }}">
