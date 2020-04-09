@@ -1,0 +1,4 @@
+ckanapi==4.3
+ckanext-scheming==1.2.0
+ckanext-showcase==1.0.3
+ckantoolkit==0.0.4
