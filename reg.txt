@@ -4,3 +4,4 @@ ckanapi==4.3
 -e git+https://github.com/smallmedia/iod-ckan.git@b8660574f30a1b8b81f4466a7ca4ccdd4e0911e1#egg=ckanext_iod_theme&subdirectory=ckanext-iod_theme
 ckantoolkit==0.0.4
 googleanalytics==0.26.0
+Flask-DebugToolbar==0.11.0
