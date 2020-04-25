@@ -225,7 +225,7 @@ blockquote:lang(fa_IR) {
 }
 
 [role=main]:lang(fa_IR) .primary {
-  float: left;
+  float: inherit;
 }
 
 [role=main]:lang(fa_IR) .secondary {
@@ -352,11 +352,20 @@ blockquote:lang(fa_IR) {
   padding-right: 10px;
   padding-left: 25px;
 }
+.module-content:lang(fa_IR){
+  padding: 50px;
+}
 
 .module-resource:lang(fa_IR) .actions {
   float: left;
   right: 0;
   left: -15px;
+}
+
+.actions:lang(fa_IR) {
+  position: relative;
+  float: left;
+  left: auto;
 }
 
 .recline-pager:lang(fa_IR) {
@@ -834,6 +843,7 @@ a:active {
 
 .media-item {
   text-align: center;
+  z-index: 1;
 }
 
 /*------------------------------------*\
