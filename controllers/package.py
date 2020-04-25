@@ -13,7 +13,8 @@ CACHE_PARAMETERS = ['__cache', '__no_cache__']
 log = logging.getLogger(__name__)
 
 abort = base.abort
-redirect = base.redirect
+render = base.render
+# redirect = base.redirect
 
 NotFound = logic.NotFound
 NotAuthorized = logic.NotAuthorized
