@@ -233,6 +233,9 @@ blockquote:lang(fa_IR) {
   border-left: 1px solid #dddddd;
   border-right: 0;
 }
+.media-item .media-image:lang(fa_IR){
+  width: 100%;
+}
 
 .search-form:lang(fa_IR) .control-order-by {
   float: left;
@@ -1659,6 +1662,9 @@ a:active {
 @media (max-width: 768px) {
   .wrapper {
     margin: 0;
+  }
+  .wrapper:before:lang(fa_IR) {
+    width: 0 !important;
   }
 }
 
