@@ -88,7 +88,10 @@ class PackageController(PackageController):
                         url = h.url_for(controller='package',
                                         action='new_resource',
                                         id=pkg_dict['name'])
-                    redirect(url)
+                    # redirect(url)
+                    h.redirect_to(controller='package',
+                                        action='new_resource',
+                                        id=pkg_dict['name'])
                 # Make sure we don't index this dataset
                 if request.params['save'] not in ['go-resource',
                                                   'go-metadata']:
@@ -105,7 +108,10 @@ class PackageController(PackageController):
                 url = h.url_for(controller='package',
                                 action='new_resource',
                                 id=pkg_dict['name'])
-                redirect(url)
+                # redirect(url)
+                h.redirect_to(controller='package',
+                                action='new_resource',
+                                id=pkg_dict['name'])
 
             self._form_save_redirect(pkg_dict['name'], 'new',
                                      package_type=package_type)
