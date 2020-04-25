@@ -229,7 +229,7 @@ blockquote:lang(fa_IR) {
 }
 
 [role=main]:lang(fa_IR) .secondary {
-  float: right;
+  /* float: right; */
   border-left: 1px solid #dddddd;
   border-right: 0;
 }
