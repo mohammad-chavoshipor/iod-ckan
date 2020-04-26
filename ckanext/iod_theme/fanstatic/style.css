@@ -224,9 +224,9 @@ blockquote:lang(fa_IR) {
   float: right;
 }
 
-[role=main]:lang(fa_IR) .primary {
+/* [role=main]:lang(fa_IR) .primary {
   float: inherit;
-}
+} */
 
 [role=main]:lang(fa_IR) .secondary {
   /* float: right; */
