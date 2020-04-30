@@ -1726,3 +1726,7 @@ a:active {
 /*.nav-item>a, .nav-aside li a{
   unicode-bidi: bidi-override;
 }*/
+
+.ckanext-showcase-image{
+  width: 100%;
+}
