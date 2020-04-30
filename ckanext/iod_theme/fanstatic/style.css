@@ -1730,3 +1730,6 @@ a:active {
 .ckanext-showcase-image{
   width: 100%;
 }
+.module-content img{
+  width: 100%;
+}
