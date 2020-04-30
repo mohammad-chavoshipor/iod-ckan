@@ -1733,3 +1733,15 @@ a:active {
 .module-content img{
   width: 100%;
 }
+[role=main] .primary{
+  float:initial !important;
+}
+.select2-search-choice-close, .select2-container-multi .select2-search-choice-close{
+  top:4px !important;
+}
+.select2-container-multi .select2-choices li:lang(fa_IR){
+  float: right;
+}
+.select2-search-choice div{
+  padding-right: 7px;
+}
