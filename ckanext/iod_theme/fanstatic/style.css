@@ -1767,3 +1767,51 @@ a:active {
 /*.nav-item>a, .nav-aside li a{
   unicode-bidi: bidi-override;
 }*/
+
+.ckanext-showcase-image{
+  width: 100%;
+}
+.module-content img{
+  width: 100%;
+}
+.select2-search-choice-close, .select2-container-multi .select2-search-choice-close{
+  top:4px !important;
+}
+.select2-container-multi .select2-choices li:lang(fa_IR){
+  float: right;
+}
+.select2-search-choice div{
+  padding-right: 7px;
+}
+@media (min-width: 768px){
+  .wrapper:before {
+    right: 0;
+  }
+}
+@media (min-width: 980px){
+.masthead .nav-collapse {
+    float: right;
+}
+}
+.masthead .nav-collapse {
+  padding-top: 10px;
+}
+.nav-collapse.collapse {
+  height: auto;
+  overflow: visible;
+}
+.collapse {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  -moz-transition: height 0.35s ease;
+  -o-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+}
+.collapse{
+  display: block;
+}
+.navbar .lang-selector li > a, .navbar .navigation li > a{
+  text-align: right;
+}
