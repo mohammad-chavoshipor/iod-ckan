@@ -1771,3 +1771,6 @@ a:active {
 .collapse{
   display: block;
 }
+.navbar .lang-selector li > a, .navbar .navigation li > a{
+  text-align: right;
+}
