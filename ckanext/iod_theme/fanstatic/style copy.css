@@ -140,10 +140,6 @@ h6:lang(fa_IR) {
 .theme-list:lang(fa_IR) li h4 {
   font-family: Vazir, 'Droid Kufi', sans-serif;
 }
-
-.dropdown-backdrop{
-    position: static;
-}
 /*------------------------------------*\
     #RTL
 \*------------------------------------*/
@@ -169,6 +165,9 @@ ol:lang(fa_IR) {
 
 .pull-left:lang(fa_IR) {
   float: right;
+  position: absolute;
+  left: 0px;
+  z-index: 1;
 }
 
 .pull-right:lang(fa_IR) {
@@ -225,14 +224,17 @@ blockquote:lang(fa_IR) {
   float: right;
 }
 
-[role=main]:lang(fa_IR) .primary {
-  float: left;
-}
+/* [role=main]:lang(fa_IR) .primary {
+  float: inherit;
+} */
 
 [role=main]:lang(fa_IR) .secondary {
   float: right;
   border-left: 1px solid #dddddd;
   border-right: 0;
+}
+.media-item .media-image:lang(fa_IR){
+  width: 100%;
 }
 
 .search-form:lang(fa_IR) .control-order-by {
@@ -266,6 +268,9 @@ blockquote:lang(fa_IR) {
   float: left;
   margin-right: 0;
   margin-left: -7px;
+  position: absolute;
+  left: 40px;
+  z-index: 1;
 }
 
 .page-header:lang(fa_IR) .nav-tabs {
@@ -350,11 +355,20 @@ blockquote:lang(fa_IR) {
   padding-right: 10px;
   padding-left: 25px;
 }
+/* .module-content:lang(fa_IR){
+  padding: 50px;
+} */
 
 .module-resource:lang(fa_IR) .actions {
   float: left;
   right: 0;
   left: -15px;
+}
+
+.actions:lang(fa_IR) {
+  position: relative;
+  float: left;
+  left: auto;
 }
 
 .recline-pager:lang(fa_IR) {
@@ -478,7 +492,7 @@ blockquote:lang(fa_IR) {
 }
 
 .theme-list li {
-  width: calc(14% - 18px);
+  width: calc(20% - 20px);
 }
 
 .theme-list--not-homepage li {
@@ -530,7 +544,7 @@ blockquote:lang(fa_IR) {
 
 .theme-list li h3 {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 400;
   font-family: 'Lato', 'PT Sans', sans-serif;
 }
@@ -566,10 +580,6 @@ blockquote:lang(fa_IR) {
   width: 99%;
   margin: 0 0 1rem 0;
   overflow: hidden;
-}
-
-.campaigns * .clamping{
-  height: 16.4rem;
 }
 
 .clamping:after {
@@ -754,7 +764,7 @@ a:active {
 }
 
 .iod-title {
-  font-size: 4rem;
+  font-size: 6rem;
   text-align: center;
   padding: 10px 0 20px;
 }
@@ -834,37 +844,9 @@ a:active {
     #MASONRY
 \*------------------------------------*/
 
-.media-grid {
-  height: auto !important;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 .media-item {
-  position: relative !important;
-  top: unset !important;
-  left: unset !important;
-  width: calc(88% / 3);
-  margin: 15px 2% 0;
-  border: 1em solid transparent;
   text-align: center;
-}
-
-@media (max-width:767px) {
-  .media-grid {
-    flex-direction: column;
-  }
-
-  .media-item {
-    width: 100%;
-  }
-}
-
-@media (min-width:768px) and (max-width:979px) {
-  .media-item {
-    width: calc(92% / 2);
-  }
+  z-index: 1;
 }
 
 /*------------------------------------*\
@@ -1681,36 +1663,13 @@ a:active {
   .wrapper {
     margin: 0;
   }
-}
-
-/*------------------------------------*\
-    #FOOTER EMAIL FORM
-\*------------------------------------*/
-
-.footer-email-form {
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.footer-email-form .input-email {
-  height: 30px;
-  margin-bottom: 0;
-}
-
-@media (max-width: 420px) {
-  .footer-email-form .input-email {
-    width: 175px;
+  .wrapper:before:lang(fa_IR) {
+    width: 0 !important;
   }
 }
 
-.footer-email-form .btn {
-  margin-right: 4px;
-  margin-left: 4px;
-}
-
 #lab_social_icon_footer {
-  margin-top: 30px;
-  padding: 10px 0 20px;
+  padding: 40px 0;
 }
 
 #lab_social_icon_footer a {
@@ -1767,3 +1726,51 @@ a:active {
 /*.nav-item>a, .nav-aside li a{
   unicode-bidi: bidi-override;
 }*/
+
+.ckanext-showcase-image{
+  width: 100%;
+}
+.module-content img{
+  width: 100%;
+}
+.select2-search-choice-close, .select2-container-multi .select2-search-choice-close{
+  top:4px !important;
+}
+.select2-container-multi .select2-choices li:lang(fa_IR){
+  float: right;
+}
+.select2-search-choice div{
+  padding-right: 7px;
+}
+@media (min-width: 768px){
+  .wrapper:before {
+    right: 0;
+  }
+}
+@media (min-width: 980px){
+.masthead .nav-collapse {
+    float: right;
+}
+}
+.masthead .nav-collapse {
+  padding-top: 10px;
+}
+.nav-collapse.collapse {
+  height: auto;
+  overflow: visible;
+}
+.collapse {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  -moz-transition: height 0.35s ease;
+  -o-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+}
+.collapse{
+  display: block;
+}
+.navbar .lang-selector li > a, .navbar .navigation li > a{
+  text-align: right;
+}
