@@ -1768,3 +1768,6 @@ a:active {
   -o-transition: height 0.35s ease;
   transition: height 0.35s ease;
 }
+.collapse{
+  display: block;
+}
