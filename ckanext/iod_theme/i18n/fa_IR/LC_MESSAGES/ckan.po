@@ -5030,3 +5030,7 @@ msgstr "کمپین ها"
 #: ckanext-iod_theme/ckanext/iod_theme/templates/header.html:98
 msgid "Articles"
 msgstr "مقاله ها"
+
+#: ckanext-iod_theme/ckanext/iod_theme/templates/home/layout3.html:27
+msgid "Projects"
+msgstr "پروژه ها"
