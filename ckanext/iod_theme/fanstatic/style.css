@@ -1747,3 +1747,24 @@ a:active {
     right: 0;
   }
 }
+@media (min-width: 980px){
+.masthead .nav-collapse {
+    float: right;
+}
+}
+.masthead .nav-collapse {
+  padding-top: 10px;
+}
+.nav-collapse.collapse {
+  height: auto;
+  overflow: visible;
+}
+.collapse {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  -moz-transition: height 0.35s ease;
+  -o-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+}
